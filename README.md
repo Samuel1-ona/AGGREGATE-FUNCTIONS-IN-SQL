@@ -58,7 +58,7 @@ The syntax for using these functions as window functions is as follows:
 
 ```COUNT(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - counts the number of non-null values in a column over a specified window of rows
 
-``AVG(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - calculates the average of values in a column over a specified window of rows
+```AVG(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - calculates the average of values in a column over a specified window of rows
 
 ```MIN(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - returns the minimum value in a column over a specified window of rows
 

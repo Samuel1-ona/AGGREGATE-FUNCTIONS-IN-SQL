@@ -8,9 +8,13 @@ Syntax:
 The syntax for using these functions is as follows:
 
 ```SUM(column_name)``` - calculates the sum of values in a column
+
 ```COUNT(column_name)``` - counts the number of non-null values in a column
+
 ```AVG(column_name)``` - calculates the average of values in a column
+
 ```MIN(column_name)``` - returns the minimum value in a column
+
 ```MAX(column_name)``` - returns the maximum value in a column
 
 
@@ -51,10 +55,16 @@ Syntax:
 The syntax for using these functions as window functions is as follows:
 
 ```SUM(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - calculates the sum of values in a column over a specified window of rows
+
 ```COUNT(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - counts the number of non-null values in a column over a specified window of rows
+
 ``AVG(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - calculates the average of values in a column over a specified window of rows
+
 ```MIN(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - returns the minimum value in a column over a specified window of rows
+
 ```MAX(column_name) OVER (PARTITION BY partition_column ORDER BY sort_column ROWS/RANGE frame_definition)``` - returns the maximum value in a column over a specified window of rows
+
+
 In the syntax above, the OVER() clause defines the window of rows to be used in the calculation. **The PARTITION BY clause divides the rows into partitions based on a specified column, while the ORDER BY clause sorts the rows within each partition based on a specified column.** The ROWS or RANGE frame definition specifies the range of rows to be included in the window calculation.
 
 ```
